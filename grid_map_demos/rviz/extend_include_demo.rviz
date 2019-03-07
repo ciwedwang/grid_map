@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /GridMap2
         - /Elevation1
       Splitter Ratio: 0.5075
     Tree Height: 853
@@ -25,24 +26,24 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: Elevation
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
     - Class: rviz/Axes
-      Enabled: false
+      Enabled: true
       Length: 0.2
       Name: Axes
       Radius: 0.01
       Reference Frame: <Fixed Frame>
-      Value: false
+      Value: true
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Class: grid_map_rviz_plugin/GridMap
       Color: 200; 200; 200
       Color Layer: elevation
       Color Transformer: GridMapLayer
-      Enabled: false
+      Enabled: true
       Height Layer: elevation
       Height Transformer: GridMapLayer
       History Length: 1
@@ -56,7 +57,28 @@ Visualization Manager:
       Topic: /extend_include_demo/grid_map
       Unreliable: false
       Use Rainbow: true
-      Value: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: grid_map_rviz_plugin/GridMap
+      Color: 200; 200; 200
+      Color Layer: elevation
+      Color Transformer: GridMapLayer
+      Enabled: true
+      Height Layer: elevation
+      Height Transformer: GridMapLayer
+      History Length: 1
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 10
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: GridMap
+      Show Grid Lines: true
+      Topic: /extend_include_demo/new_grid_map
+      Unreliable: false
+      Use Rainbow: true
+      Value: true
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: /grid_map_visualization/map_region
@@ -77,12 +99,12 @@ Visualization Manager:
       Color: 255; 255; 255
       Color Transformer: Intensity
       Decay Time: 0
-      Enabled: true
+      Enabled: false
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 0.0769531
+      Max Intensity: 0
       Min Color: 0; 85; 127
-      Min Intensity: -0.156953
+      Min Intensity: 0
       Name: Elevation
       Position Transformer: XYZ
       Queue Size: 10
@@ -94,7 +116,7 @@ Visualization Manager:
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: false
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: false
       Autocompute Value Bounds:
@@ -182,22 +204,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.97238
+      Distance: 73.946
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.00701846
-        Y: 0.113553
-        Z: -0.107872
+        X: -0.176547
+        Y: -0.136313
+        Z: -0.0401137
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.474798
+      Pitch: 0.674798
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 2.39541
+      Yaw: 2.86541
     Saved: ~
 Window Geometry:
   Displays:
@@ -215,5 +237,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1855
-  X: 65
+  X: 1985
   Y: 24
